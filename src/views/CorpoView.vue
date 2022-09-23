@@ -1,7 +1,7 @@
 <template>
     <main class="corpo">
         <section class="corpo__secao">
-            <h1 class="corpo__titulo">
+            <h1 class="corpo__titulo" @click="nRandomico">
                 Lançamentos
             </h1>
             <ul class="corpo__itensP">
@@ -10,13 +10,17 @@
         </section>
         <section class="corpo__secao">
             <h1 class="corpo__titulo">
-                Produtos
+                Categorias
             </h1>
             <ul class="corpo__itensP">
                 <li class="corpo__itemP">
                     <router-link to="/Produtos/Perifericos">
                     <figure class="corpo__conteiner">
-                        <img src="../assets/imagens/Perifericos/Periferico-4.png" class="corpo__imgP">
+                        <img src="../assets/imagens/Perifericos/Periferico-1.png" v-if="this.periferico == 0" class="corpo__imgP">
+                        <img src="../assets/imagens/Perifericos/Periferico-2.png" v-if="this.periferico == 1" class="corpo__imgP">
+                        <img src="../assets/imagens/Perifericos/Periferico-3.png" v-if="this.periferico == 2" class="corpo__imgP">
+                        <img src="../assets/imagens/Perifericos/Periferico-4.png" v-if="this.periferico == 3" class="corpo__imgP">
+                        <img src="../assets/imagens/Perifericos/Periferico-5.png" v-if="this.periferico == 4" class="corpo__imgP">
                         <figcaption class="corpo__img-texto">Perifericos</figcaption>
                     </figure>
                     </router-link>
@@ -24,7 +28,11 @@
                 <li class="corpo__itemP">
                     <router-link to="/Produtos/Hardware">
                     <figure class="corpo__conteiner">
-                        <img src="../assets/imagens/Hardware/Hardware-2.png" class="corpo__imgP">
+                        <img src="../assets/imagens/Hardware/Hardware-1.webp" v-if="this.hardware == 0" class="corpo__imgP">
+                        <img src="../assets/imagens/Hardware/Hardware-2.png" v-if="this.hardware == 1" class="corpo__imgP">
+                        <img src="../assets/imagens/Hardware/Hardware-3.png" v-if="this.hardware == 2" class="corpo__imgP">
+                        <img src="../assets/imagens/Hardware/Hardware-4.png" v-if="this.hardware == 3" class="corpo__imgP">
+                        <img src="../assets/imagens/Hardware/Hardware-5.png" v-if="this.hardware == 4" class="corpo__imgP">
                         <figcaption class="corpo__img-texto">Hardware</figcaption>
                     </figure>
                     </router-link>
@@ -32,7 +40,9 @@
                 <li class="corpo__itemP">
                     <router-link to="/Produtos/Celulares">
                     <figure class="corpo__conteiner">
-                        <img src="../assets/imagens/Celulares/Celular-1.jpg" class="corpo__imgP">
+                        <img src="../assets/imagens/Celulares/Celular-1.jpg" v-if="this.celular == 0" class="corpo__imgP">
+                        <img src="../assets/imagens/Celulares/Celular-2.jpg" v-if="this.celular == 1" class="corpo__imgP">
+                        <img src="../assets/imagens/Celulares/Celular-3.jpg" v-if="this.celular == 2" class="corpo__imgP">
                         <figcaption class="corpo__img-texto">Celulares</figcaption>
                     </figure>
                     </router-link>
@@ -40,7 +50,9 @@
                 <li class="corpo__itemP">
                     <router-link to="/Produtos/Notebooks">
                     <figure class="corpo__conteiner">
-                        <img src="../assets/imagens/Notebooks/Notebook-1.jpg" class="corpo__imgP">
+                        <img src="../assets/imagens/Notebooks/Notebook-1.jpg" v-if="this.notebook == 0" class="corpo__imgP">
+                        <img src="../assets/imagens/Notebooks/Notebook-2.png" v-if="this.notebook == 1" class="corpo__imgP">
+                        <img src="../assets/imagens/Notebooks/Notebook-3.png" v-if="this.notebook == 2" class="corpo__imgP">
                         <figcaption class="corpo__img-texto">Notebooks</figcaption>
                     </figure>
                     </router-link>
@@ -48,7 +60,9 @@
                 <li class="corpo__itemP">
                     <router-link to="/Produtos/Computadores">
                     <figure class="corpo__conteiner">
-                        <img src="../assets/imagens/Computadores/Computador-1.jpg" class="corpo__imgP">
+                        <img src="../assets/imagens/Computadores/Computador-1.jpg" v-if="this.computador == 0" class="corpo__imgP">
+                        <img src="../assets/imagens/Computadores/Computador-2.jpg" v-if="this.computador == 1" class="corpo__imgP">
+                        <img src="../assets/imagens/Computadores/Computador-3.jpg" v-if="this.computador == 2" class="corpo__imgP">
                         <figcaption class="corpo__img-texto">Computadores</figcaption>
                     </figure>
                     </router-link>
@@ -76,6 +90,31 @@ export default defineComponent ({
     name: 'CorpoView',
     components:{
         CorpoItem
+    },
+    methods:{
+        nRandomico(valor : string){
+            const random = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == valor).length);
+            console.log(this.Produto.filter(prod => prod.nome == valor).length ,random)
+            return random
+        }
+    },
+    mounted(){
+        this.periferico = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == "Perifericos").length);
+        this.hardware = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == "Hardware").length);
+        this.celular = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == "Celulares").length);
+        this.notebook = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == "Notebooks").length);
+        this.computador = Math.floor(Math.random() * this.Produto.filter(prod => prod.nome == "Computadores").length);
+
+    },
+    data(){
+        return{
+            periferico:0,
+            hardware:0,
+            celular:0,
+            notebook:0,
+            computador:0
+            
+        }
     },
     setup(){
         const store = useStore()

@@ -58,7 +58,7 @@ export const store = createStore<Estado>({
             {
                 id: 1,   
                 nome: "Perifericos",
-                img:"img/Periferico-1.0c235cb0.png",
+                img:"/img/Periferico-1.0c235cb0.png",
                 titulo:'Mouse',
                 preco: 10,
                 subclasse: "Mouse",
@@ -89,7 +89,7 @@ export const store = createStore<Estado>({
             {   
                 id: 2,
                 nome: "Hardware",
-                img:"img/Hardware-1.d86824cf.webp",
+                img:"/img/Hardware-1.d86824cf.webp",
                 titulo:'Processador',
                 preco: 500,
                 subclasse: "Processadores",
@@ -119,7 +119,7 @@ export const store = createStore<Estado>({
             {   
                 id: 3,
                 nome: "Celulares",
-                img:"img/Celular-3.047436d5.jpg",
+                img:"/img/Celular-3.047436d5.jpg",
                 titulo:'Celular',
                 preco: 800,
                 subclasse: "",
@@ -148,7 +148,7 @@ export const store = createStore<Estado>({
             {   
                 id: 4,
                 nome: "Notebooks",
-                img:"img/Notebook-3.f435649e.png",
+                img:"/img/Notebook-3.f435649e.png",
                 titulo:'Notebook',
                 preco: 1200,
                 subclasse: "",
@@ -177,7 +177,7 @@ export const store = createStore<Estado>({
             {   
                 id: 5,
                 nome: "Computadores",
-                img:"img/Computador-3.ce7a9eec.jpg",
+                img:"/img/Computador-3.ce7a9eec.jpg",
                 titulo:'Computador',
                 preco: 1500,
                 subclasse: "",
@@ -323,7 +323,7 @@ export const store = createStore<Estado>({
       id: 10,
       nome: "Notebooks",
       img:"/img/Notebook-1.fa9bba0c.jpg",
-      titulo:'Notebooks 3',
+      titulo:'Notebook 3',
       preco: 1800,
       subclasse: "",
       new:false,
