@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import { useStore } from "@/store";
 import { defineComponent } from "vue";
 
 
@@ -77,7 +78,7 @@ export default defineComponent({
             return this.valor
         },
         precoComputed(){
-            return this.preco * this.valor
+            return this.carrinho.preco * this.valor
         }
 
     },
@@ -97,7 +98,7 @@ export default defineComponent({
             botao.disabled = true
             botao2.disabled = false
             botao.classList.add('desabilitado')
-            this.$emit('aoComprar',(this.preco * this.valor))
+            this.$emit('aoComprar',(this.carrinho.preco * this.valor))
         }
     },
   data() {
