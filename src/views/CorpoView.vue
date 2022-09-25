@@ -1,7 +1,7 @@
 <template>
     <main class="corpo">
         <section class="corpo__secao">
-            <h1 class="corpo__titulo" @click="nRandomico">
+            <h1 class="corpo__titulo">
                 Lançamentos
             </h1>
             <ul class="corpo__itensP">
@@ -190,13 +190,13 @@ textarea:focus, input:focus, select:focus {
             padding: 0.2rem;
             border: 1px solid navy;
             color: navy;
-            font-weight: bold;
             @include Inter-400;
+            font-weight: bold;
         }
         &__label{
-            font-weight: bold;
             color: navy;
             @include Inter-400;
+            font-weight: bold;
 
         }
         &__input{
@@ -255,8 +255,9 @@ textarea:focus, input:focus, select:focus {
         &__titulo-filtro{
             margin-bottom: 1rem;
             color: navy;
-            font-weight: bold;
+            font-size: 1.2rem;
             @include Inter-400;
+            font-weight: bold;
         }
         &__checkbox{
             margin-right: 1rem;

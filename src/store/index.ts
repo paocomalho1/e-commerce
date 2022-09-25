@@ -64,7 +64,7 @@ export const store = createStore<Estado>({
                 subclasse: "Mouse",
                 new:false,
                 vendas:200,
-                rate:50,
+                rate:40,
                 votes:10,
                 Comments:[
                   {
@@ -95,7 +95,7 @@ export const store = createStore<Estado>({
                 subclasse: "Processadores",
                 new:false,
                 vendas:10,
-                rate:50,
+                rate:31,
                 votes:10,
                 Comments:[
                   {
@@ -125,7 +125,7 @@ export const store = createStore<Estado>({
                 subclasse: "",
                 new:false,
                 vendas:10,
-                rate:50,
+                rate:35,
                 votes:10,
                 Comments:[
                   {
@@ -154,7 +154,7 @@ export const store = createStore<Estado>({
                 subclasse: "",
                 new:false,
                 vendas:10,
-                rate:50,
+                rate:35,
                 votes:10,
                 Comments:[
                   {
@@ -183,7 +183,7 @@ export const store = createStore<Estado>({
                 subclasse: "",
                 new:false,
                 vendas:10,
-                rate:50,
+                rate:35,
                 votes:10,
                 Comments:[
                   {
@@ -212,7 +212,7 @@ export const store = createStore<Estado>({
               subclasse: "",
               new:false,
               vendas:10,
-              rate:50,
+              rate:35,
                 votes:10,
               Comments:[
                 {
@@ -241,7 +241,7 @@ export const store = createStore<Estado>({
             subclasse: "",
             new:false,
             vendas:10,
-            rate:50,
+            rate:35,
             votes:10,
             Comments:[
               {
@@ -270,7 +270,7 @@ export const store = createStore<Estado>({
           subclasse: "",
           new:false,
           vendas:10,
-          rate:50,
+          rate:35,
           votes:10,
           Comments:[
             {
@@ -299,7 +299,7 @@ export const store = createStore<Estado>({
         subclasse: "",
         new:false,
         vendas:10,
-        rate:50,
+        rate:35,
         votes:10,
         Comments:[
           {
@@ -328,7 +328,7 @@ export const store = createStore<Estado>({
       subclasse: "",
       new:false,
       vendas:10,
-      rate:50,
+      rate:45,
       votes:10,
       Comments:[
         {
@@ -357,7 +357,7 @@ export const store = createStore<Estado>({
     subclasse: "",
     new:false,
     vendas:10,
-    rate:50,
+    rate:45,
     votes:10,
     Comments:[
       {
@@ -386,7 +386,7 @@ export const store = createStore<Estado>({
   subclasse: "Coolers",
   new:false,
   vendas:10,
-  rate:50,
+  rate:45,
   votes:10,
   Comments:[
     {
@@ -415,7 +415,7 @@ export const store = createStore<Estado>({
   subclasse: "Placa mae",
   new:false,
   vendas:10,
-  rate:50,
+  rate:45,
   votes:10,
   Comments:[
     {
@@ -443,7 +443,7 @@ export const store = createStore<Estado>({
   subclasse: "Memoria ram",
   new:false,
   vendas:180,
-  rate:50,
+  rate:45,
   votes:10,
   Comments:[
     {
@@ -471,7 +471,7 @@ export const store = createStore<Estado>({
   subclasse: "Placa de video",
   new:true,
   vendas:10,
-  rate:50,
+  rate:45,
   votes:10,
   Comments:[
     {
@@ -499,7 +499,7 @@ export const store = createStore<Estado>({
   subclasse: "Teclado",
   new:true,
   vendas:110,
-  rate:50,
+  rate:29,
   votes:10,
   Comments:[
     {
@@ -527,7 +527,7 @@ export const store = createStore<Estado>({
   subclasse: "Caixa de som",
   new:true,
   vendas:10,
-  rate:50,
+  rate:19,
   votes:10,
   Comments:[
     {
@@ -555,7 +555,7 @@ export const store = createStore<Estado>({
   subclasse: "Microfone",
   new:true,
   vendas:10,
-  rate:50,
+  rate:38,
   votes:10,
   Comments:[
     {

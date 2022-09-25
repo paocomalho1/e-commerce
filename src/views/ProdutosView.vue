@@ -23,15 +23,15 @@
                 <div class="corpo__conteiner-filtro">
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Celulares" name="Celulares" class="corpo__checkbox" checked>
-                        <label for="Celulares">Celulares</label>
+                        <label class="corpo__label" for="Celulares">Celulares</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Notebooks" name="Notebooks" class="corpo__checkbox" checked>
-                        <label for="Notebooks">Notebooks</label>
+                        <label class="corpo__label" for="Notebooks">Notebooks</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Computadores" name="Computadores" class="corpo__checkbox" checked>
-                        <label for="Computadores">Computadores</label>
+                        <label class="corpo__label" for="Computadores">Computadores</label>
                     </div>
                 </div>
             </fieldset>
@@ -40,23 +40,23 @@
                 <div class="corpo__conteiner-filtro">
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Mouse" name="Mouse" class="corpo__checkbox" checked>
-                        <label for="Mouse">Mouse</label>
+                        <label class="corpo__label" for="Mouse">Mouse</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Teclado" name="Teclado" class="corpo__checkbox" checked>
-                        <label for="Teclado">Teclado</label>
+                        <label class="corpo__label" for="Teclado">Teclado</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Caixa de som" name="Caixa de som" class="corpo__checkbox" checked>
-                        <label for="Caixa de som">Caixa de som</label>
+                        <label class="corpo__label" for="Caixa de som">Caixa de som</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Microfone" name="Microfone" class="corpo__checkbox" checked>
-                        <label for="Microfone">Microfone</label>
+                        <label class="corpo__label" for="Microfone">Microfone</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Gabinete" name="Gabinete" class="corpo__checkbox" checked>
-                        <label for="Gabinete">Gabinete</label>
+                        <label class="corpo__label" for="Gabinete">Gabinete</label>
                     </div>
                 </div>
             </fieldset>
@@ -65,23 +65,23 @@
                 <div class="corpo__conteiner-filtro">
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Coolers" name="Coolers" class="corpo__checkbox" checked>
-                        <label for="Coolers">Coolers</label>
+                        <label class="corpo__label" for="Coolers">Coolers</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Memoria ram" name="Memoria ram" class="corpo__checkbox" checked>
-                        <label for="Memoria ram">Memoria ram</label>
+                        <label class="corpo__label" for="Memoria ram">Memoria ram</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Placa Mae" name="Placa mae" class="corpo__checkbox" checked>
-                        <label for="Placa Mae">Placa Mae</label>
+                        <label class="corpo__label" for="Placa Mae">Placa Mae</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Placa de video" name="Placa de video" class="corpo__checkbox" checked>
-                        <label for="Placa de video">Placa de video</label>
+                        <label class="corpo__label" for="Placa de video">Placa de video</label>
                     </div>
                     <div class="corpo__continer-checkbox">
                         <input type="checkbox" id="Processadores" name="Processadores" class="corpo__checkbox" checked>
-                        <label for="Processadores">Processadores</label>
+                        <label class="corpo__label" for="Processadores">Processadores</label>
                     </div>
                 </div>
             </fieldset>

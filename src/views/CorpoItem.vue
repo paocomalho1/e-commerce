@@ -4,11 +4,11 @@
       <p class="corpo__texto-star">({{produto.rate}})</p>
       <div class="corpo__conteiner-star">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star" :class="{ checked: produto.rate / produto.votes > 0}"></span>
+        <span class="fa fa-star" :class="{ checked: produto.rate / produto.votes > 1}"></span>
+        <span class="fa fa-star" :class="{ checked: produto.rate / produto.votes > 2}"></span>
+        <span class="fa fa-star" :class="{ checked: produto.rate / produto.votes > 3}"></span>
+        <span class="fa fa-star" :class="{ checked: produto.rate / produto.votes > 4}"></span>
       </div>
     </div>
     <router-link :to="`/Produto/${produto.id}`" class="router">
